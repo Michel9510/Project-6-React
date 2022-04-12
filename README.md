@@ -1,6 +1,8 @@
 # React API UI Pattern
 This project uses an API to display facts about Animes.
-
+#Links
+1. https://michel9510.github.io/Project-6-React/
+2.
 # About
 Upon loading the page the tab titles are fetched from the Anime facts API. Whatever tab is clicked on a fetch request is made to retrive the anime facts. The selected tab will be displayed until another tab is clicked.
 
