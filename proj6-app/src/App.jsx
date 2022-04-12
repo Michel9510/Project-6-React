@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import axios from 'axios';
 import { animePics } from "./animePics"
-import Navbar from "./Components/Navbar.jsx";
+import Navbar from "./components/Navbar.jsx";
 import "./App.css";
 import Anime from "./components/Anime.jsx";
 
@@ -25,7 +25,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        {/* <Route path="/" element={<h2>Cat Facts!</h2>} /> */}
+        {/* <Route path="/" element={<h2>Anime</h2>} /> */}
         <Route path="/anime-fact-1" element={<Anime index={0} animes={animes} animePic={animePics[0]} num={1} />} />
         <Route path="/anime-fact-2" element={<Anime index={1} animes={animes} animePic={animePics[1]} num={2} />} />
         <Route path="/anime-fact-3" element={<Anime index={2} animes={animes} animePic={animePics[2]} num={3} />} />

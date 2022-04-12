@@ -1,25 +1,26 @@
 import React, { useState, useEffect } from 'react'
+import { animePics } from '../animePics.js'
 
 export default function Anime(props) {
 
   let { animePic, num, index, animes } = props
-  const [anime, setCat] = useState(null)
+  const [anime, setAnime] = useState(null)
 
   useEffect(() => {
-    if (!anime.length) {
+    if (!animes.length) {
       const localAnimes = localStorage.getItem('animes')
-      setCat(localAnimes)
+      setAnime(localAnimes)
     } else {
-      setCat(animes[index])
+      setAnime(animes[index])
     }
   }, [animes, index])
 
 
   return (
     <div className="contanier">
-      <h1>{`Welcome to Animes Fact number ${num}`}</h1>
+      <h1>{`Welcome to top ${num} Anime`}</h1>
       <h3>{anime && anime.text}</h3>
-      <img className='img' src={animePic} alt="fun animes" />
+      <img className='img' src={animePics} alt="fun animes" />
     </div>
   )
 }
