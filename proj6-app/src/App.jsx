@@ -26,11 +26,11 @@ function App() {
       <Navbar />
       <Routes>
         {/* <Route path="/" element={<h2>Anime</h2>} /> */}
-        <Route path="/anime-fact-1" element={<Anime index={0} animes={animes} animePic={animePics[0]} num={1} />} />
-        <Route path="/anime-fact-2" element={<Anime index={1} animes={animes} animePic={animePics[1]} num={2} />} />
-        <Route path="/anime-fact-3" element={<Anime index={2} animes={animes} animePic={animePics[2]} num={3} />} />
-        <Route path="/anime-fact-4" element={<Anime index={3} animes={animes} animePic={animePics[3]} num={4} />} />
-        <Route path="/anime-fact-5" element={<Anime index={4} animes={animes} animePic={animePics[4]} num={5} />} />
+        <Route path="/anime-1" element={<Anime index={0} animes={animes} animePic={animePics[0]} num={1} />} />
+        <Route path="/anime-2" element={<Anime index={1} animes={animes} animePic={animePics[1]} num={2} />} />
+        <Route path="/anime-3" element={<Anime index={2} animes={animes} animePic={animePics[2]} num={3} />} />
+        <Route path="/anime-4" element={<Anime index={3} animes={animes} animePic={animePics[3]} num={4} />} />
+        <Route path="/anime-5" element={<Anime index={4} animes={animes} animePic={animePics[4]} num={5} />} />
       </Routes>
     </div>
   );

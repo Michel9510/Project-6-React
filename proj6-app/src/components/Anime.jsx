@@ -15,12 +15,11 @@ export default function Anime(props) {
     }
   }, [animes, index])
 
-
   return (
     <div className="contanier">
       <h1>{`Welcome to top ${num} Anime`}</h1>
       <h3>{anime && anime.text}</h3>
-      <img className='img' src={animePics} alt="fun animes" />
+      <img className='img' src={animePics[num - 1]} alt="fun animes" />
     </div>
   )
 }
