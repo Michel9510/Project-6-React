@@ -1,12 +1,15 @@
 .contanier {
   text-align: center;
+  background-color: black;
+  color: white;
+
 
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(105, 105, 105);
+  background-color: black;
   font-size: xx-large;
   color: white;
   margin: 20px;
